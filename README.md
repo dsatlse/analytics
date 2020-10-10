@@ -1,42 +1,29 @@
 # LSESU Data Science Society - Data Analytics
 LSESU Data Science Society - produce Data analytics - data pipelines and reproducible statistical analysis - on social media, email, signups data
 
+# Datasets to Analyse
+
 ## Signup Data
 
-This is a dataset on society membership
+```test_data/anonymised_membership_purchases.csv```
 
-### Data Description
+Dataset of anonymised signups on the Student Union
 
-```ID``` : Anonymised ID corresponding to an unique student
+[See SIGNUP.md](SIGNUP.md)
 
-```product_name``` : Either ```"Give It A Go Mailing List"``` or ```"Membership"```
+## Emails
 
-```purchase_date``` : Date purchased
+```test_data/emails.csv```
 
-Example row:
+Dataset of all emails sent and their open rates
 
-| ID | product_name | purchase_date|
-| -- | -- | --|
-| 657 | Membership | 2020-09-24 20:07:00 |
+## Welcome Survey
 
+```test_data/anonymised_survey_data.csv```
 
-### Questions to investigate
+Anonymised responses to our Welcome Survey
 
-Produce a report (Jupyter/ R / Pluto) that addresses these, and any other questions:
+## Facebook
+Dataset of Facebook posts and their engagement rate. To be added
 
-+ Plot cumulative membership for each year. For each year, filter memberships on or after July to get the membership for that year. 
-+ When do people purchase membership?
-+ Make a stacked plot of membership by month,  to see if we can see any differences in trend in each year
-+ What are the trends in membership (yearly, monthly differenced) across 2017, 2018, 2019, 2020? There is probably a stastistical test for differences in trend
-+ How many people who purchase Give It A Go mailing list convert to membership?
-+ How many people remain members across years?
-
-### Productionising
-
-This could then be turned into a simple dashboard - User uploads the ```file.csv```, relevant data visualisations are displayed
-
-### Technologies
-
-Analysis: Python (Numpy, Pandas), R (ggplot, tidyverse), Julia
-
-Plotting / Dashboard : Plotly, R Shiny, React.js (d3.js?)
+[Outline of task here](FacebookAnalysisBrief.pdf)
